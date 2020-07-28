@@ -17,12 +17,7 @@ router.post('/', function(req, res)
 
 	if (req.body.hasOwnProperty("dlt"))
 	{
-    var popup = require('popups');
-    popupS.window({
-      mode: 'alert',
-      content: 'Deleted'
-    });
-		//alert("Deleted....");
+  	res.render('admin/allemployeelist/index');
 	}
 });
 
