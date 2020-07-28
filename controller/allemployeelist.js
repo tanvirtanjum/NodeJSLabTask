@@ -3,7 +3,7 @@ var router = express.Router();
 
 router.get('/', function(req, res)
 {
-	res.render('admin/addemployee/index');
+	res.render('admin/allemployeelist/index');
 });
 
 

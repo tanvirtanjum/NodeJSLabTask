@@ -8,8 +8,15 @@ router.get('/', function(req, res)
 
 router.post('/', function(req, res)
 {
-
+	if(req.body.hasOwnProperty("add"))
+	{
 		res.redirect('admin/addemployee');
+	}
+
+	else if (req.body.hasOwnProperty("all"))
+	{
+		res.redirect('admin/allemployeelist');
+	}
 
 });
 
