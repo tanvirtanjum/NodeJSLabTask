@@ -1,5 +1,7 @@
 var express = require('express');
+//var popup = require('popups');
 var router = express.Router();
+
 
 router.get('/', function(req, res)
 {
@@ -13,9 +15,14 @@ router.post('/', function(req, res)
 		res.redirect('allemployeelist/update');
 	}
 
-	else if (req.body.hasOwnProperty("dlt"))
+	if (req.body.hasOwnProperty("dlt"))
 	{
-		res.redirect('admin/allemployeelist');
+    var popup = require('popups');
+    popupS.window({
+      mode: 'alert',
+      content: 'Deleted'
+    });
+		//alert("Deleted....");
 	}
 });
 
