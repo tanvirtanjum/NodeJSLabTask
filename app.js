@@ -15,8 +15,8 @@ app.set('view engine', 'ejs');
 //middleware
 app.use(bodyParser());
 app.use('/login', login);
-app.use('/EmployeeDashBoard', admin);
-app.use('/EmployeeDashBoard', employee);
+app.use('/admin', admin);
+app.use('/employee', employee);
 
 app.get('/', function(req, res)
 {
