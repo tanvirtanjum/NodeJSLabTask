@@ -15,7 +15,7 @@ router.post('/', function(req, res)
 
 	else if (req.body.hasOwnProperty("up"))
 	{
-		res.redirect('employee/myprofile');
+		res.redirect('employee/updateprofile');
 	}
 
 });
