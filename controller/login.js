@@ -9,15 +9,15 @@ router.get('/', function(req, res)
 router.post('/', function(req, res)
 {
 
-	if(req.body.uname == req.body.password)
+	if(req.body.uname == 'a' && req.body.password == 'a')
   {
 		res.redirect('/admin');
 	}
 
-  /*else if(req.body.uname == req.body.password)
+  else if(req.body.uname == 'e' && req.body.password == 'e')
   {
 		res.redirect('/employee');
-	}*/
+	}
 
   else
   {
