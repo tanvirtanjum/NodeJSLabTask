@@ -6,6 +6,19 @@ var router = express.Router();
 router.get('/', function(req, res)
 {
 	res.render('admin/allemployeelist/index');
+	/*if(req.body.hasOwnProperty("upd"))
+	{
+		res.redirect('allemployeelist/update');
+	}
+
+	else if (req.body.hasOwnProperty("dlt"))
+	{
+  	res.redirect('allemployeelist/delete');
+	}
+	else
+	{
+		res.render('admin/allemployeelist/index');
+	}*/
 });
 
 router.post('/', function(req, res)
