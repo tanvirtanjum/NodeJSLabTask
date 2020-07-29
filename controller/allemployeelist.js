@@ -21,6 +21,11 @@ router.get('/', function(req, res)
 	}*/
 });
 
+/*router.get('/delete', function(req, res)
+{
+	res.render('admin/allemployeelist/delete/index');
+});*/
+
 router.post('/', function(req, res)
 {
 	if(req.body.hasOwnProperty("upd"))
@@ -33,6 +38,5 @@ router.post('/', function(req, res)
   	res.redirect('allemployeelist/delete');
 	}
 });
-
 
 module.exports = router;
