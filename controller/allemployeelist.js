@@ -17,7 +17,7 @@ router.post('/', function(req, res)
 
 	if (req.body.hasOwnProperty("dlt"))
 	{
-  	res.render('admin/allemployeelist/index');
+  	res.redirect('allemployeelist/delete');
 	}
 });
 

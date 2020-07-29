@@ -7,6 +7,7 @@ var employee 		= require('./controller/employee');
 var addemployee = require('./controller/addemployee');
 var allemployeelist = require('./controller/allemployeelist');
 var update = require('./controller/update');
+var dlt = require('./controller/delete');
 var myprofile = require('./controller/myprofile');
 var updateprofile = require('./controller/updateprofile');
 
@@ -25,6 +26,7 @@ app.use('/employee', employee);
 app.use('/admin/addemployee', addemployee);
 app.use('/admin/allemployeelist', allemployeelist);
 app.use('/admin/allemployeelist/update', update);
+app.use('/admin/allemployeelist/delete', dlt);
 app.use('/employee/myprofile', myprofile);
 app.use('/employee/updateprofile', updateprofile);
 
